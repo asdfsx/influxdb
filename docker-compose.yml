@@ -1,0 +1,7 @@
+influxdb:
+  image: asdfsx/influxdb
+  net: host
+  volumes:
+    - ./influxdb.toml:/etc/influxdb.toml
+    - /data:/data
+  restart: always
